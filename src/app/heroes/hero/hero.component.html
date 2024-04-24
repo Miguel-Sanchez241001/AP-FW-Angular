@@ -1,0 +1,30 @@
+<h1>{{name}}</h1>
+  <dl>
+    <td> Nombre:</td>
+    <dd>{{name}}</dd>
+    <td> Edad:</td>
+    <dd>{{age}}</dd>
+    <td> Metodo:</td>
+    <!-- <dd>{{getHeroDescripcion()}}</dd> Metodo se llama con parentesis -->
+    <dd>{{getHeroDescripcion()}}</dd>
+    <td> Capitalizacion:</td>
+    <!-- <dd>{{capitalizeName}}</dd> Get se considera propiedad se llama con el nombre nda mas  -->
+    <dd>{{capitalizeName}}</dd>
+  </dl>
+<button
+*ngIf="name !== 'Linterna Verde'"
+(click)="changeName()" class="btn btn-primary mx-2">
+  Cambiar nombre
+</button>
+<button
+*ngIf="age !== 71"
+(click)="changeAge()" class="btn btn-primary mx-2">
+  Cambiar edad
+</button>
+<button
+
+(click)="resert()" class="btn btn-primary mx-2">
+ Resent
+</button>
+
+
